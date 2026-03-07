@@ -1,6 +1,6 @@
 # Insta-Engager
 
-👋 A**n AI Instagram profile analyser tool that suggest content strategies for higher engagement.**
+**👋 An AI Instagram profile analyser tool that suggest content strategies for higher engagement.**
 
 ## Description: What is it?
 
