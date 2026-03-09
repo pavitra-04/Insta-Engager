@@ -1,0 +1,39 @@
+erDiagram
+    USER ||--o{ POST : posts
+    POST ||--|{ POST_LIKES : gets
+    POST ||--o{ COMMENTS : gets
+    POST ||--o{ VIEWS : has
+    COMMENTS ||--o{ COMMENT_LIKES : has
+
+    USER {
+        string user_id PK
+        string username
+        string password
+        string email
+        string instagram_id
+    }
+    POST {
+        string post_id PK
+        string user_id FK
+        datetime post_time
+        string post_type
+    }
+    POST_LIKES {
+        string like_id PK
+        string post_id FK
+        int like_count_post
+    }
+    COMMENTS {
+        int comment_id PK
+        string comment_text
+    }
+    VIEWS {
+        int post_id FK
+        int view_count
+        datetime view_time
+
+    }
+    COMMENT_LIKES {
+        int comment_id FK
+        int like_count_comm
+    }
