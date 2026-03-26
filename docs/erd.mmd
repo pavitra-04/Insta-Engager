@@ -3,15 +3,15 @@ erDiagram
     POST ||--o{ COMMENTS : has
 
     USER {
-        string user_id PK
+        int user_id PK
         string username
         string password
         string email
         string instagram_id
     }
     POST {
-        string post_id PK
-        string user_id FK
+        int post_id PK
+        int user_id FK
         datetime post_time
         string post_type
         int like_count
